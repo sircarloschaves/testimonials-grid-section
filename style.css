@@ -194,6 +194,46 @@ body {
 .attribution {
   text-align: center;
 }
+
+@media screen and (min-width: 376px) {
+  .grid-container {
+    width: 375.2px;
+    margin-inline: auto;
+  }
+}
+ 
+@media screen and (min-width: 1439px){
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem 1.875rem;
+    margin-block: 10.25rem;
+    width: 1110px;
+    margin-inline: auto;
+  }
+
+  .card:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  .card:nth-child(5) {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+
+  .card:nth-child(4) {
+    grid-column: span 2;
+  }
+
+  .card:nth-child(1) .testimonial-text {
+    margin-block-start: 1rem;
+  }
+
+  .card:nth-child(3) .testimonial-text,
+  .card:nth-child(4) .testimonial-text,
+  .card:nth-child(5) .testimonial-text {
+    margin-block-start: 1.5rem;
+  }
+}
  
 
 
