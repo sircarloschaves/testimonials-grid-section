@@ -206,6 +206,7 @@ body {
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem 1.875rem;
+    padding-inline: 0;
     margin-block: 10.25rem;
     width: 1110px;
     margin-inline: auto;
