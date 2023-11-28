@@ -203,13 +203,22 @@ body {
 }
  
 @media screen and (min-width: 1439px){
+  body {
+    margin-block: 10.25rem;
+  }
+
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem 1.875rem;
     padding-inline: 0;
-    margin-block: 10.25rem;
+    padding-block: 0;
+    margin-block: 0;
     width: 1110px;
     margin-inline: auto;
+  }
+
+  .card:nth-child(1) {
+    background-position: 81.8% 0;
   }
 
   .card:nth-child(1) {
@@ -234,6 +243,11 @@ body {
   .card:nth-child(5) .testimonial-text {
     margin-block-start: 1.5rem;
   }
+
+  .attribution {
+    margin-block-start: .5rem;
+  }
+
 }
  
 
